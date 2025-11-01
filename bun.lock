@@ -11,12 +11,14 @@
     "apps/with-rsbuild": {
       "name": "with-rsbuild",
       "dependencies": {
+        "@tanstack/react-router": "catalog:",
         "react": "catalog:",
         "react-dom": "catalog:",
       },
       "devDependencies": {
         "@rsbuild/core": "1.5.17",
         "@rsbuild/plugin-react": "1.4.1",
+        "@tanstack/router-plugin": "catalog:",
         "@types/react": "catalog:",
         "@types/react-dom": "catalog:",
       },

@@ -10,6 +10,7 @@
 - **TanStack Router** - ルーティングライブラリ（自動コード分割対応）
 
 ### 主な機能
-- ファイルベースルーティング（TanStack Router Plugin）
 - 自動コード分割（`autoCodeSplitting: true`）
 - React 19 対応
+
+File Based Routing は Tanstack Router の機能であり重複するため、with-vite のサンプルをご覧ください！
