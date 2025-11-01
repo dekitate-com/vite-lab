@@ -1,13 +1,23 @@
-import React from "react";
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { App } from "./app";
+import { routeTree } from "./routeTree.gen";
 
-const rootEl = document.getElementById("root");
-if (rootEl) {
-	const root = ReactDOM.createRoot(rootEl);
+const router = createRouter({ routeTree });
+
+declare module "@tanstack/react-router" {
+	interface Register {
+		router: typeof router;
+	}
+}
+
+// biome-ignore lint/style/noNonNullAssertion: root Element is always exists
+const rootElement = document.getElementById("root")!;
+if (!rootElement.innerHTML) {
+	const root = ReactDOM.createRoot(rootElement);
 	root.render(
-		<React.StrictMode>
-			<App />
-		</React.StrictMode>,
+		<StrictMode>
+			<RouterProvider router={router} />
+		</StrictMode>,
 	);
 }
