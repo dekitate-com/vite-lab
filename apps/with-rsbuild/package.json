@@ -1,0 +1,21 @@
+{
+	"name": "with-rsbuild",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "rsbuild build",
+		"dev": "rsbuild dev",
+		"preview": "rsbuild preview"
+	},
+	"dependencies": {
+		"react": "19.2.0",
+		"react-dom": "19.2.0"
+	},
+	"devDependencies": {
+		"@rsbuild/core": "1.5.17",
+		"@rsbuild/plugin-react": "1.4.1",
+		"@types/react": "19.2.2",
+		"@types/react-dom": "19.2.2"
+	}
+}
