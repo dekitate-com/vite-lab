@@ -5,9 +5,6 @@
 		"clientKind": "git",
 		"useIgnoreFile": true
 	},
-	"files": {
-		"includes": ["**", "!**/*.gen.ts"]
-	},
 	"linter": {
 		"domains": {
 			"react": "recommended"

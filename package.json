@@ -1,24 +1,14 @@
 {
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview",
 		"lint": "biome check",
 		"format": "biome format --write"
 	},
-	"dependencies": {
-		"@tanstack/react-router": "1.133.27",
-		"react": "19.2.0",
-		"react-dom": "19.2.0"
-	},
+	"workspaces": [
+		"apps/*"
+	],
 	"devDependencies": {
 		"@biomejs/biome": "2.2.6",
-		"@tanstack/router-plugin": "1.133.27",
-		"@types/react": "19.2.2",
-		"@types/react-dom": "19.2.2",
-		"@vitejs/plugin-react": "5.0.4",
 		"lefthook": "1.13.6",
-		"typescript": "5.9.3",
-		"vite": "7.1.9"
+		"typescript": "5.9.3"
 	}
 }
